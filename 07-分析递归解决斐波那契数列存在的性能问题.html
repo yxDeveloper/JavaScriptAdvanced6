@@ -8,12 +8,12 @@
 
         var count = 0;
         function fib(n){
-            count ++;
-            if(n <= 2){
-                return 1;
-            }
-            return fib(n - 1) + fib(n - 2);
-        }
+			count ++;
+			if(n < 2) {
+				return 1;
+			}
+			return fib(n-1) + fib(n - 2);
+		}
 
         fib(5);
         console.log(count);
